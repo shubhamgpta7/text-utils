@@ -22,7 +22,6 @@ function App() {
   };
 
   return (
-    <div>
       <Router>
         <Navbar
           title="My Title"
@@ -36,11 +35,10 @@ function App() {
             element={
               <TextForm heading="Enter the text to analyze below" mode={mode} />
             }
-          ></Route>
-          <Route path="/about" element={<About/>} ></Route>
+          />
+          <Route path="/about" element={<About/>} />
         </Routes>
       </Router>
-    </div>
   );
 }
 
